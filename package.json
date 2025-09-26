@@ -1,0 +1,10 @@
+{
+  "name": "tp4-simple",
+  "version": "1.0.0",
+  "scripts": {
+    "start:back": "cd back && node server.js",
+    "start:front": "cd front && python -m http.server 3000"
+  }
+}
+
+
