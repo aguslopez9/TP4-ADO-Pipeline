@@ -304,3 +304,5 @@ stages:
 - un solo pipeline para toda la aplicacion
 - artefactos coordinados (frontend-dist + backend-dist)
 - notificaciones unificadas
+
+**cambio para ejecutar el pipeline**
