@@ -30,7 +30,7 @@ stages:
     - task: PublishPipelineArtifact@1
       displayName: 'Publish Frontend Artifact'
       inputs:
-        targetPath: '$(System.DefaultWorkingDirectory)/front/build'
+        targetPath: '$(System.DefaultWorkingDirectory)/front'
         artifact: 'frontend-dist'
 
   - job: BuildBackend
