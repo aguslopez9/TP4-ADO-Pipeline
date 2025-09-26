@@ -22,7 +22,7 @@ stages:
         versionSpec: $(nodeVersion)
     
     - script: |
-        npm ci
+        npm install
         npm run build
       displayName: 'Build Frontend'
       workingDirectory: '$(System.DefaultWorkingDirectory)/front'
@@ -45,12 +45,8 @@ stages:
         versionSpec: $(nodeVersion)
     
     - script: |
-        npm ci
-      displayName: 'Install Dependencies'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/back'
-    
-    - script: |
-        npm run build || echo "No build script defined"
+        npm install
+        npm run build
       displayName: 'Build Backend'
       workingDirectory: '$(System.DefaultWorkingDirectory)/back'
     
